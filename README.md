@@ -83,9 +83,9 @@ graph TD
 
 ## 致谢
 
-- DeepSeek大模型支持
-- Gradio交互框架
-- FPDF文档生成库
+- [DeepSeek](https://www.deepseek.com/)大模型支持，如此简单的架构就能实现这样的效果，DeepSeek团队的贡献功不可没
+- [Gradio](https://www.gradio.app/)交互框架
+- [FPDF](https://py-pdf.github.io/fpdf2/index.html)文档生成库
 
 ---
 <!-- 
