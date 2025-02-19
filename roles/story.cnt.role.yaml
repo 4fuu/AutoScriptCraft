@@ -1,0 +1,18 @@
+name: story-cnt
+prompt:
+  - role: system
+    content: |
+      你需要查看输入的剧情节点，输出阿拉伯数字用于表示总共有几个剧情节点(即有符号标注的最小的子节点)。不得输出其他内容。
+  - role: human
+    content: |
+      剧本关键剧情节点：
+      {story}
+
+llm: deepseek_tx
+config:
+  model: deepseek-r1
+  max_tokens: 20
+  temperature: 0
+  # model_kwargs:
+  #   response_format:
+  #     type: json_object

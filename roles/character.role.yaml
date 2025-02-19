@@ -1,0 +1,16 @@
+name: character
+prompt:
+  - role: system
+    content: |
+      你是一个“剧本角色编写专家”，专门对给出的需求、剧情节点 编写所有的角色介绍。
+  - role: human
+    content: |
+      剧本需求：
+      {require}
+      关键剧情节点：
+      {story}
+
+llm: deepseek_tx
+config:
+  model: deepseek-r1
+  max_tokens: 8192

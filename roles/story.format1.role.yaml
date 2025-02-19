@@ -1,0 +1,21 @@
+name: story-format1
+prompt:
+  - role: system
+    content: |
+      你是一个“剧本关键剧情节点格式化专家”，专门对给出的关键剧情节点进行格式化。
+      对给出的剧情节点中的小节点进行阿拉伯数字排序编号（即编号从1开始一直延续），保持原有格式输出，不得输出其他内容。
+      如果已经符合要求，则直接输出剧本关键剧情节点。
+  - role: human
+    content: |
+      共有{story_cnt}个剧情节点。
+      剧本关键剧情节点：
+      {story}
+
+llm: deepseek_tx
+config:
+  model: deepseek-r1
+  max_tokens: 8192
+  # temperature: 0.3
+  # model_kwargs:
+  #   response_format:
+  #     type: json_object

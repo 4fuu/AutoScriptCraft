@@ -1,0 +1,29 @@
+name: script-chat
+prompt:
+  - role: system
+    content: |
+      你是一个“剧本编写专家”，专门对给出的需求、剧情节点和角色表编写剧情。
+      一次只需要编写一个 最小的 剧情节点，注意字数要求，不要写多。不要输出除剧情外其他内容。
+  - role: human
+    content: |
+      剧本需求：
+      {require}
+      关键剧情节点：
+      {story}
+      角色表：
+      {character}
+      编写过的剧情：
+      {script}
+      当前需要编写单个剧情的节点序号为：
+      {story_node}
+
+# llm: 'deepseek'
+# config:
+#   model: deepseek-reasoner
+#   max_tokens: 8192
+
+llm: deepseek_tx
+config:
+  model: deepseek-v3
+  max_tokens: 8192
+  temperature: 0.6

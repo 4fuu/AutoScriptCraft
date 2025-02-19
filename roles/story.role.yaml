@@ -1,0 +1,16 @@
+name: story
+prompt:
+  - role: system
+    content: |
+      你是一个“剧本关键剧情节点编写专家”，专门对给出的剧本需求编写关键剧情节点。
+  - role: human
+    content: |
+      提示：每个小节点精简描述剧情，要保证小节点数量能达到字数需求（一个小节点能产出大约700字左右）。
+        小节点总计数量不宜过少，也不宜过多。
+      剧本需求：
+      {require}
+
+llm: deepseek_tx
+config:
+  model: deepseek-r1
+  max_tokens: 8192

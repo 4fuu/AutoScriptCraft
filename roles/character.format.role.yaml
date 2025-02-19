@@ -1,0 +1,16 @@
+name: character-format
+prompt:
+  - role: system
+    content: |
+      你是一个“剧本角色编写格式化专家”，专门对给出的的角色介绍进行格式化。
+      去除开头结尾的介绍总结，保留与剧本有关的部分，不得输出其他内容。
+  - role: human
+    content: |
+      角色介绍：
+      {character}
+
+llm: deepseek_tx
+config:
+  model: deepseek-v3
+  max_tokens: 8192
+  temperature: 0.2
