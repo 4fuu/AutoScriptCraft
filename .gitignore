@@ -9,3 +9,7 @@ build/
 
 # Project
 llms/*.yaml
+roleplay/
+*.txt
+
+svg/

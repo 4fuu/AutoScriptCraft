@@ -15,7 +15,9 @@ prompt:
       9. 其他或补充事项
       不要输出其他内容。
   - role: human
-    content: '{require}'
+    content: |
+      编写需求：
+      {require}
 
 llm: deepseek_tx
 config:

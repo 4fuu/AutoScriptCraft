@@ -279,4 +279,4 @@ with gr.Blocks(title='剧本生成') as demo:
         show_progress='hidden'
     )
 
-demo.queue().launch(server_name='0.0.0.0')
+demo.queue().launch()
