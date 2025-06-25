@@ -1,3 +1,5 @@
+![B319FDA68F1A6A9B2705C6D5B44AE099](https://github.com/user-attachments/assets/aca2fec8-67df-4692-b411-fb4a1e59e354)
+该项目被应用于安庆师范大学-黄梅戏大模型中的戏曲剧本创作
 # AutoScriptCraft - 智能剧本生成系统
 
 ![GitHub](https://img.shields.io/badge/license-AGPL--3.0-blue)
@@ -6,7 +8,7 @@
 ## 项目简介
 
 AutoScriptCraft 是一个基于多智能体协作的自动化剧本生成系统，通过模块化的工作流程实现从用户需求到完整剧本的端到端生成。系统采用线性流程设计，包含需求分析、剧情构建、角色塑造、剧本生成四大核心模块，每个模块由专业化的AI智能体负责，最终生成包含完整剧本和制作报告的PDF文档。
-底层架构 [Roleplay](https://github.com/maye76/roleplay) 是基于LangChain开发的智能体开发工具，提供YAML配置解析、记忆管理、工具集成等基础能力.
+底层架构 [Roleplay](https://github.com/4fuu/roleplay) 是基于LangChain开发的智能体开发工具，提供YAML配置解析、记忆管理、工具集成等基础能力.
 
 ## 主要功能
 
